@@ -47,9 +47,9 @@ class IndexPage(View):
         # a.一般只能使用主键或者唯一键作为查询条件
         # b.get方法如果查询的记录为空和多条记录，那么会抛出异常
         # c.返回的模型类对象，会自动提交
-        project_obj = Projects.objects.get(id=8)
+        # project_obj = Projects.objects.get(id=8)
 
-        Projects.objects.filter(name='杰克克天下第一')
+        # Projects.objects.filter(name='杰克克天下第一')
         # Projects.objects.filter()
         # Projects.objects.exclude()
         return HttpResponse('<h1>GET 别说了！花姐最美</h1>'.format('pk'))
